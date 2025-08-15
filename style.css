@@ -3,6 +3,7 @@ body {
     background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
     margin: 0;
     padding: 0;
+    padding-top: 64px; /* Platz für Banner */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -71,8 +72,30 @@ h1 {
     text-decoration: underline;
 }
 .greeting {
+    display: inline-block;
+    background: #e3f2fd;
     color: #007bff;
     font-weight: bold;
     margin-bottom: 18px;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 4px rgba(0,123,255,0.08);
+    border: 1px solid #b6e0fe;
+    transition: background 0.2s;
+}
+.under-construction-banner {
+    width: 100%;
+    background: #ff2d2d;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(255,45,45,0.12);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
